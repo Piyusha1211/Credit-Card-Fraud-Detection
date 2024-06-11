@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    tools:context=".Register">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/rounded_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textColor="@color/my_primary"
+            android:textSize="32dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/fnam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Full Name*"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fnam_reg"
+            android:hint="Enter your Full Name"
+            android:inputType="textPersonName"
+            android:textSize="16sp"
+            android:padding="6dp"
+            android:layout_below="@id/fnam"
+            android:background="@drawable/border"/>
+
+        <TextView
+            android:id="@+id/emil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fnam_reg"
+            android:layout_marginTop="10dp"
+            android:padding="6dp"
+            android:text="Email*"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/emil_reg"
+            android:hint="Enter your Email"
+            android:inputType="textEmailAddress"
+            android:textSize="16sp"
+            android:padding="6dp"
+            android:layout_below="@+id/emil"
+            android:background="@drawable/border"/>
+
+        <TextView
+            android:id="@+id/dob1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emil_reg"
+            android:layout_marginTop="10dp"
+            android:padding="6dp"
+            android:text="Date of Birth (dd/mm/yy)*"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dob_reg"
+            android:hint="Select your Date of Birth (dd/mm/yy)"
+            android:inputType="date"
+            android:focusable="false"
+            android:textSize="16sp"
+            android:padding="6dp"
+            android:layout_below="@+id/dob1"
+            android:background="@drawable/border"/>
+
+        <TextView
+            android:id="@+id/gndr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dob_reg"
+            android:layout_marginTop="10dp"
+            android:padding="6dp"
+            android:text="Gender*"
+            android:textSize="16sp" />
+        
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/gndr"
+            android:id="@+id/gend_reg">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/rad_f"
+                android:text="Female"
+                android:textSize="16sp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/rad_m"
+                android:text="Male"
+                android:textSize="16sp"
+                android:layout_marginLeft="20dp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/mobno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gend_reg"
+            android:layout_marginTop="10dp"
+            android:padding="6dp"
+            android:text="Mobile No*"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mobno_reg"
+            android:hint="Enter your Mobile No."
+            android:inputType="phone"
+            android:textSize="16sp"
+            android:padding="6dp"
+            android:layout_below="@+id/mobno"
+            android:background="@drawable/border"/>
+
+        <TextView
+            android:id="@+id/Passd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mobno_reg"
+            android:layout_marginTop="10dp"
+            android:padding="6dp"
+            android:text="Password*"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Passd_reg"
+            android:hint="Enter your Password"
+            android:inputType="textPassword"
+            android:textSize="16sp"
+            android:padding="6dp"
+            android:layout_below="@+id/Passd"
+            android:background="@drawable/border"/>
+
+        <TextView
+            android:id="@+id/confPassd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Passd_reg"
+            android:layout_marginTop="10dp"
+            android:padding="6dp"
+            android:text="Confirm Password*"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/confPassd_reg"
+            android:hint="Confirm your Password"
+            android:inputType="textPassword"
+            android:textSize="16sp"
+            android:padding="6dp"
+            android:layout_below="@+id/confPassd"
+            android:background="@drawable/border"/>
+
+        <Button
+            android:id="@+id/btn_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/confPassd_reg"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="70dp"
+            android:text="REGISTER"
+            android:textColor="@color/white" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progbar"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:elevation="10dp"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+
+</ScrollView>

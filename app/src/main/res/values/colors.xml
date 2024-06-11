@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="my_primary">#673AB7</color>
+    <color name="my_secondary">#7E57C2</color>
+    <color name="grey">#A3A3A3</color>
+    
+    <color name="selectedIconColor">#04E1F9</color>
+    <color name="defaultIconColor">#F6F6F6</color>
+    <color name="CountTextColor">#fff</color>
+    <color name="CountBackgroundColor">#F45E0B</color>
+    <color name="CircleColor">#fff</color>
+    <color name="BackgroundBottomColor">#04E1F8</color>
+    <color name="ShadowColor">#2E2E2E</color>
+
+</resources>

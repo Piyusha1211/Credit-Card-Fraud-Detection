@@ -1,0 +1,65 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.Fragments.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/rounded_background"
+        android:layout_gravity="center"
+        android:layout_above="@id/BtmNav">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/adamina"
+                android:gravity="center"
+                android:text="Credit Card Fraud Detection Predictor"
+                android:textColor="#716C71"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/CcNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Credit Card Number"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/amt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Amount"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:id="@+id/predict"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Predict"
+                android:textColor="@color/white"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="40dp"
+                android:gravity="center"
+                android:layout_marginTop="80dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>
